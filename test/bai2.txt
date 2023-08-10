@@ -1,0 +1,58 @@
+Diablo
+
+Mark is playing Diablo II.
+To pass a level, he needs to defeat all m monster on the map. He has a sword with durability d .
+Everytime he defeats a monster, the durability decreases by k unit. Mark can repair his sword at
+anytime, restoring the durability to d ; it costs c gold each time. However, if the weapon's
+durability reach 0 or below, it'll become unrepairable and unusable.
+Help Mark to calculate the minimum amount of gold to safely pass this level. If it's impossible,
+print -1 .
+
+Mark đang chơi Diablo II.
+Để qua được màn chơi, người chơi cần giết hết m con quái vật trong map. Mark dùng 1 thanh
+kiếm có độ bền d . Mỗi lần giết 1 con quái vật thì độ bền vũ khí giảm k đơn vị. Mark có thể sử
+dụng chức năng sửa đồ để phục hồi độ bền của thanh kiếm về như mới ( d đơn vị); mỗi lần sửa
+cần tốn c gold. Tuy nhiên nếu 1 vũ khí có độ bền giảm về 0 hoặc nhỏ hơn thì vũ khí đó sẽ biến
+mất, không thể sửa được nữa.
+Hãy giúp Mark tính xem cần chuẩn bị tối thiểu bao nhiêu gold để có thể an toàn qua màn. Nếu
+không thể qua được map, in ra màn hình số -1 .
+Input Format
+A single line with 4 integers m , d , k , c , separated by a space.
+
+1 dòng duy nhất, gồm 4 số m , d , k , c theo thứ tự đó, cách nhau bởi dấu cách.
+
+Constraints
+0 <= m , k , c <= 1000
+0 < d <= 1000
+Output Format
+A single integer, the amount of gold Mark needs to prepare to pass the level. If it's impossible,
+print -1 .
+
+1 số duy nhất, là số gold tối thiểu Mark cần chuẩn bị để có thể qua được map. Nếu Mark không
+thể qua được map này thì in ra -1 .
+Sample Input 0
+10 5 1 2
+
+Sample Output 0
+4
+
+Explanation 0
+Mark can defeat 3 monsters, repair once, defeat another 3, repair again, then defeat the
+remaining 4 to clear the level. Each repair takes 4 gold, so the output is 4.
+
+Mark giết 3 con quái vật, sửa 1 lần, giết 3 con tiếp theo, sửa lần nữa, và giết nốt 4 con còn lại. Mỗi
+lần sửa tốn 2 gold, vậy tổng cộng cần 4 gold để qua màn.
+Sample Input 1
+10 4 1 2
+
+Sample Output 1
+
+4
+
+Explanation 1
+Similar to the above scenario, Mark can defeat 3, repair, defeat 3 more, repair and defeat the last
+4. He needs 4 gold and loses the sword at the end.
+
+Gần giống test trên nhưng độ bền tối đa của thanh kiếm chỉ có 4. Mark giết 3 con quái vật, sửa lần
+1, giết 3 con nữa, sửa lần 2, và giết nốt 4 con còn lại. Tuy mất thanh kiếm nhưng vẫn qua được
+map. Cần 4 gold cho 2 lần sửa.

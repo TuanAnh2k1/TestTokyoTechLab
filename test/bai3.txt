@@ -1,0 +1,48 @@
+Giao hữu bóng đá
+
+Tokyo Techies and Tokyo Tech Lab are having a football match. Everyone is very excited and got
+there on time.
+TungPD, however, was too focus on coding and forgot the time. When he realized and get there,
+the first half was
+already over. Current score: TT x - y TTLab.
+Trying to save face, he wants to guess the scoring order in the first half. Can you help him by
+writing a program to
+count the number of ways for the score to get to x - y ?
+==============[Tiếng Việt]==============
+Tokyo Techies và Tokyo Tech Lab tổ chức giao hữu bóng đá. Anh em các miền rất hào hứng đến
+xem và cổ vũ.
+Có mỗi anh TùngPD do mải code nên quên giờ, đến khi nhớ ra và chạy đến thì trận đấu đã diễn ra
+hết hiệp 1. Tỉ số lúc
+này là TT x - y TTLab.
+Anh Tùng muốn tỏ ra nguy hiểm và đoán thứ tự ghi bàn của cả hiệp 1. Hãy giúp anh Tùng viết
+chương trình đếm số cách
+để đạt được tỉ số x - y như hiện tại.
+
+Input Format
+The first line contains a single integer N , the number of test cases.
+The following N lines each contains 2 integers x , y separated by a space.
+==============[Tiếng Việt]==============
+Dòng đầu là số test case con N .
+N dòng tiếp theo là các test case con chứa 2 số x , y phân cách bởi dấu cách.
+Constraints
+0 < N <= 100
+0 <= x , y <= 10
+Output Format
+N dòng, dòng thứ i là số cách đạt được tỉ số cho trong test case con thứ i .
+Sample Input 0
+2
+2 0
+1 3
+
+Sample Output 0
+1
+4
+
+Explanation 0
+● Case 1 thì chỉ có 1 cách là TT ghi liên tiếp 2 bàn.
+● Case 2 có 4 cách:
+● TT ghi bàn trước, sau đó là 3 bàn của TTLab
+
+● TTLab ghi 1 bàn, TT ghi 1 bàn, TTLab ghi 2 bàn
+● TTLab ghi 2 bàn, TT ghi 1 bàn, TTLab ghi 1 bàn
+● TT ghi 1 bàn sau khi bị TTLab ghi 3 bàn

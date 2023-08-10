@@ -1,0 +1,47 @@
+Cân bằng ngoặc
+Given a string contains only the following characters:
+{ [ ( ) ] }
+Your task is to check if the string is balance or not.
+A string is considered balance if and only if:
+● Every opening bracket has a matching closing bracket that doesn't come before it.
+● The substrings between all pairs of matching brackets are balance.
+An empty string is considered a balance string.
+
+Cho 1 xâu chỉ gồm các ký tự ngoặc:
+{ [ ( ) ] }
+Xét xem xâu được cho có cân bằng không.
+Xâu được coi là cân bằng khi
+● Mỗi dấu mở ngoặc có 1 dấu đóng ngoặc tương ứng không nằm trước nó.
+● Tất cả các chuỗi con giữa mọi cặp ngoặc phải cân bằng.
+1 xâu rỗng cũng được coi là xâu cân bằng.
+Input Format
+● The first line contains a single integer N , the number of test cases.
+● The following N lines are the test cases. Each contains a string of brackets.
+
+● Dòng đầu tiên là số test case con N .
+● N dòng tiếp theo là N string chứa các dấu mở/đóng ngoặc
+Constraints
+0 < N <= 100
+No string is longer than 100000 characters.
+All strings contain only characters in { [ ( ) ] }
+
+0 < N <= 100
+Độ dài mỗi xâu không quá 100000 ký tự.
+Xâu chỉ chứa các ký tự { [ ( ) ] }
+Output Format
+N lines, the i -th line is true if the i -th test is a balance string, otherwise false .
+
+N dòng, dòng thứ i là true nếu test thứ i là xâu cân bằng, ngược lại thì là false .
+Sample Input 0
+5
+( )
+{ [ ( ) ] }
+{ [ ( ) } ]
+( ) (
+] ( ) [
+Sample Output 0
+true
+true
+false
+false
+false
